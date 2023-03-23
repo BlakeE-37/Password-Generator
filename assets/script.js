@@ -32,7 +32,9 @@ function generatePassword() {
 
   // character type alerts
   // lowercase alert
-  var lowercase = yesNoAlert("Include lowercase characters?");
+  var lowercase = yesNoAlert("Include LOWERCASE characters?");
+  // uppercase alert
+  var uppercase = yesNoAlert("Include UPPERCASE characters?")
 
 }
 
