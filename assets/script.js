@@ -7,22 +7,32 @@ function passwordLength() {
     return length;
   }
   else {
-    alert("Password must be between 8 and 128 charaters in length")
+    alert("Password must be between 8 and 128 charaters in length");
+    // if an incorrect value is entered re-run the function
+    return;
   }
 }
 
-function yesNOAlert(prompt) {
-
+function yesNoAlert(prompt) {
+  if (confirm(prompt + "\nClick 'OK' for Yes or 'Cancel' for No")) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function generatePassword() {
   // alerts to ask for password criteria
   //length alert
   var length = passwordLength();
+  // stops code execution if password length wasn't the correct size
+  if (!length) {
+    return;
+  }
 
   // character type alerts
   // lowercase alert
-  var yesNOAlert("include lowercase characters");
+  var lowercase = yesNoAlert("Include lowercase characters?");
 
 }
 
