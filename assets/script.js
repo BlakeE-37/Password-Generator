@@ -13,6 +13,7 @@ function passwordLength() {
   }
 }
 
+// confirm() function that returns a boolean
 function yesNoAlert(prompt) {
   if (confirm(prompt + "\nClick 'OK' for Yes or 'Cancel' for No")) {
     return true;
@@ -35,7 +36,10 @@ function generatePassword() {
   var lowercase = yesNoAlert("Include LOWERCASE characters?");
   // uppercase alert
   var uppercase = yesNoAlert("Include UPPERCASE characters?")
-
+  // number alert
+  var numbers = yesNoAlert("Include NUMERIC characters?")
+  // special character alert
+  var specialChar = yesNoAlert("Include SPECIAL CHARACTERS?")
 }
 
 // Get references to the #generate element
