@@ -19,18 +19,28 @@ function yesNoAlert(prompt) {
     return true;
   } else {
     return false;
-  }
-}
+  };
+};
 // returns a random lowercase letter
 function getRandomLower() {
-  var char = "a"
+  var char = "l";
   return char;
-}
+};
 // returns a random uppercase letter
-
+function getRandomUpper() {
+  var char = "u";
+  return char;
+};
 // returns a random number between one and nine
-
+function getRandomNum() {
+  var char = "n";
+  return char;
+};
 // returns a random special character
+function getRandomSpecial() {
+  var char = "s";
+  return char;
+};
 
 function generatePassword() {
   // alerts to ask for password criteria
@@ -60,31 +70,33 @@ function generatePassword() {
     // if the number equals ... then check if the password should contain that character, if false then subtract one from i
     if (randomFunction === 0) {
       if (lowercase) {
-        char = getRandomLower()
+        char = getRandomLower();
+        password.push(char);
       } else {
         i--;
       }
     } else if (randomFunction === 1) {
       if (uppercase) {
-        char = getRandomLower()
+        char = getRandomUpper();
+        password.push(char);
       } else {
         i--;
       }
     } else if (randomFunction === 2) {
       if (numbers) {
-        char = getRandomLower()
+        char = getRandomNum();
+        password.push(char);
       } else {
         i--;
       }
     } else if (randomFunction === 3) {
       if (specialChar) {
-        char = getRandomLower()
+        char = getRandomSpecial();
+        password.push(char);
       } else {
         i--;
       }
     }
-
-    password.push(randomFunction);
   }
   password = password.join("");
   return password;
