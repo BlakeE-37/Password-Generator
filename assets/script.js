@@ -21,11 +21,16 @@ function yesNoAlert(prompt) {
     return false;
   }
 }
-
-function getRandomChar() {
+// returns a random lowercase letter
+function getRandomLower() {
   var char = "a"
   return char;
 }
+// returns a random uppercase letter
+
+// returns a random number between one and nine
+
+// returns a random special character
 
 function generatePassword() {
   // alerts to ask for password criteria
@@ -49,10 +54,39 @@ function generatePassword() {
   // creating password
   var password = []
   for (var i = 0; i < length; i++) {
-    var char = getRandomChar();
-    password.push(char);
+    var char;
+    // pick a random number between one and four to run the correct character function
+    var randomFunction = Math.floor(Math.random() * 4)
+    // if the number equals ... then check if the password should contain that character, if false then subtract one from i
+    if (randomFunction === 0) {
+      if (lowercase) {
+        char = getRandomLower()
+      } else {
+        i--;
+      }
+    } else if (randomFunction === 1) {
+      if (uppercase) {
+        char = getRandomLower()
+      } else {
+        i--;
+      }
+    } else if (randomFunction === 2) {
+      if (numbers) {
+        char = getRandomLower()
+      } else {
+        i--;
+      }
+    } else if (randomFunction === 3) {
+      if (specialChar) {
+        char = getRandomLower()
+      } else {
+        i--;
+      }
+    }
+
+    password.push(randomFunction);
   }
-  password.join("");
+  password = password.join("");
   return password;
 }
 
