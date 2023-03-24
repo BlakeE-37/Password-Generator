@@ -22,6 +22,11 @@ function yesNoAlert(prompt) {
   }
 }
 
+function getRandomChar() {
+  var char = "a"
+  return char;
+}
+
 function generatePassword() {
   // alerts to ask for password criteria
   //length alert
@@ -43,6 +48,12 @@ function generatePassword() {
 
   // creating password
   var password = []
+  for (var i = 0; i < length; i++) {
+    var char = getRandomChar();
+    password.push(char);
+  }
+  password.join("");
+  return password;
 }
 
 // Get references to the #generate element

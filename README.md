@@ -21,6 +21,7 @@ Use the links in the header to auto scroll to the respective section. Click on e
 ##### Links to sites where I found solutions to issues I was having
 * [Prompt Help](https://www.w3schools.com/js/js_popup.asp)
 * [Confrim() Function](https://www.w3schools.com/jsref/met_win_confirm.asp)
+* [Convert an array to a String](https://herewecode.io/blog/array-to-string-without-commas-javascript/#:~:text=In%20JavaScript%2C%20all%20arrays%20have,all%20the%20array%20elements%20concatenated.)
 
 ## License
 
