@@ -61,6 +61,12 @@ function generatePassword() {
   // special character alert
   var specialChar = yesNoAlert("Include SPECIAL CHARACTERS?")
 
+  // if all criteria are false return an error
+  if (!lowercase && !uppercase && !numbers && !specialChar) {
+    alert("At least one criteria must be selected")
+    return;
+  }
+
   // creating password
   var password = []
   for (var i = 0; i < length; i++) {
