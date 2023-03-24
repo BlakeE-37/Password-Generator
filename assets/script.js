@@ -48,7 +48,7 @@ function generatePassword() {
   var length = passwordLength();
   // stops code execution if password length wasn't the correct size
   if (!length) {
-    return;
+    return ("");
   }
 
   // character type alerts
@@ -64,7 +64,7 @@ function generatePassword() {
   // if all criteria are false return an error
   if (!lowercase && !uppercase && !numbers && !specialChar) {
     alert("At least one criteria must be selected")
-    return;
+    return ("");
   }
 
   // creating password
