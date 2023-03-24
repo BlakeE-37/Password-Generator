@@ -23,12 +23,16 @@ function yesNoAlert(prompt) {
 };
 // returns a random lowercase letter
 function getRandomLower() {
-  var char = "l";
+  var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  // random index for the array above
+  var char = lowerArray[Math.floor(Math.random() * lowerArray.length)];
   return char;
 };
 // returns a random uppercase letter
 function getRandomUpper() {
-  var char = "u";
+  var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  // random index for the array above
+  var char = upperArray[Math.floor(Math.random() * upperArray.length)];
   return char;
 };
 // returns a random number between one and nine
