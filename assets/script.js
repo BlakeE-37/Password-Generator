@@ -40,6 +40,9 @@ function generatePassword() {
   var numbers = yesNoAlert("Include NUMERIC characters?")
   // special character alert
   var specialChar = yesNoAlert("Include SPECIAL CHARACTERS?")
+
+  // creating password
+  var password = []
 }
 
 // Get references to the #generate element
