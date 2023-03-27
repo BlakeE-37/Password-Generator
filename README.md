@@ -11,7 +11,7 @@ This site is a project for me to show my skill and ability to use the javascript
 The website is hosted with github pages and can be accessed at [this link](https://blakee-37.github.io/Challenge-2/)
 
 Below is an image of the loaded website.
-![pre-loaded Website](./assets/images/deployed-website.png)
+![pre-loaded Website](./assets/deployed-website.png)
 
 ## Usage
 
