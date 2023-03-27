@@ -2,9 +2,9 @@
 
 ## Description
 
-This is a website coded in HTML, and CSS. It contains a header with my name, a picture of me, and links to the sections below. I also included a hero image, links to my past projects in the form of images, and links to my social media and email at the bottom.  
+This is a web application that creates a randomly generated password based on criteria such as length and character type. These criteria are dictated by alerts given to the user.  
 
-This site is for employers to see a more mainstream form of my resume and for me to show off some of my skills as a front end developer.
+This site is a project for me to show my skill and ability to use the javascript programming language.
 
 ## Installation
 
@@ -15,13 +15,14 @@ Below is an image of the loaded website.
 
 ## Usage
 
-Use the links in the header to auto scroll to the respective section. Click on each project image to be directed to the corresponding projects github repo.
+Click the button and then input each criteria as the alerts pop-up. A password will then be generated based on that criteria and displayed on the front page. 
 
 ## Credits
 ##### Links to sites where I found solutions to issues I was having
 * [Prompt Help](https://www.w3schools.com/js/js_popup.asp)
 * [Confrim() Function](https://www.w3schools.com/jsref/met_win_confirm.asp)
 * [Convert an array to a String](https://herewecode.io/blog/array-to-string-without-commas-javascript/#:~:text=In%20JavaScript%2C%20all%20arrays%20have,all%20the%20array%20elements%20concatenated.)
+* [Using Unicode in Javascript](https://www.educative.io/answers/how-to-insert-unicode-in-javascript)
 
 ## License
 
